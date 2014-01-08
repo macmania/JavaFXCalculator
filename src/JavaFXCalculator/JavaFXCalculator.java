@@ -14,6 +14,7 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.layout.Pane;
 
 /**
  *
@@ -23,18 +24,9 @@ public class JavaFXCalculator extends Application {
     
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("JavaFXCalculator.fxml"));
-        Button btn = new Button();
-        btn.setText("Say 'Hello World'");
-        btn.setOnAction(new EventHandler<ActionEvent>() {
-            
-            @Override
-            public void handle(ActionEvent event) {
-                System.out.println("Hello World!");
-            }
-        });
+        Pane myPane = FXMLLoader.load(getClass().getResource("JavaFXCalculator.fxml"));
         
-        Scene scene = new Scene(root, 300, 250);
+        Scene scene = new Scene(myPane, 300, 250);
         primaryStage.setTitle("Calculator");
         primaryStage.setScene(scene);
         primaryStage.show();
@@ -49,7 +41,7 @@ public class JavaFXCalculator extends Application {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-         Application.launch(JavaFXCalculator.class, args);
+         launch(args);
     }
     
 }
