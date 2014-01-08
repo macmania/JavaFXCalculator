@@ -8,11 +8,15 @@
  */
 
 package CalculatorController;
+import javax.swing.*;
 
 /**
  *
  * @author jojofabe
  */
 public class CalculatorFileController {
+    private JFileChooser j = new JFileChooser(); 
+    
+   
     
 }
