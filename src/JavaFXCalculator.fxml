@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="430.0" prefWidth="658.0" visible="true" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="JavaFXCalculator.JavaFXCalculatorController">
+  <children>
+    <Button id="EnterButton" layoutX="293.0" layoutY="203.0" minHeight="16.0" onAction="#handleButtonAction" prefHeight="24.0" prefWidth="72.0" text="Enter">
+      <tooltip>
+        <Tooltip text="Enter to calculator item" />
+      </tooltip>
+    </Button>
+    <MenuBar layoutX="480.0" layoutY="14.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Close" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Minimize">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Delete" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Exit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <CheckBox layoutX="35.0" layoutY="207.0" mnemonicParsing="false" text="Binary" />
+    <CheckBox layoutX="125.0" layoutY="207.0" mnemonicParsing="false" text="Decimal" />
+    <CheckBox layoutX="225.0" layoutY="207.0" mnemonicParsing="false" text="Hex" />
+    <Pane id="ResultsText" focusTraversable="true" layoutX="406.0" layoutY="111.0" mouseTransparent="false" opacity="0.74" prefHeight="159.0" prefWidth="197.0" style="#ResultsText&#10;{&#10;    background-color:#B00000;&#10;}" visible="true" />
+    <Button id="UploadButton" layoutX="76.0" layoutY="316.0" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="85.0" text="Upload">
+      <tooltip>
+        <Tooltip text="Enter to calculator item" />
+      </tooltip>
+    </Button>
+    <Button id="EnterButton" layoutX="503.0" layoutY="316.0" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="85.0" text="Download">
+      <tooltip>
+        <Tooltip text="Enter to calculator item" />
+      </tooltip>
+    </Button>
+    <Label layoutX="406.0" layoutY="71.0" prefHeight="24.0" prefWidth="85.0" text="Result" textAlignment="RIGHT">
+      <font>
+        <Font size="18.0" />
+      </font>
+    </Label>
+    <TextField layoutX="90.0" layoutY="144.0" prefHeight="40.0" prefWidth="135.0" promptText="Enter proper number" />
+  </children>
+</AnchorPane>
+
